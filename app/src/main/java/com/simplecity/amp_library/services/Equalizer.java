@@ -317,7 +317,7 @@ public class Equalizer {
 
         try {
             session.enableBassBoost(globalEnabled && mPrefs.getBoolean("audiofx.bass.enable", false));
-            session.setBassBoostStrength(Short.valueOf(mPrefs.getString("audiofx.bass.strength", "0")));
+            session.setBassBoostStrength(Short.parseShort(mPrefs.getString("audiofx.bass.strength", "0")));
         } catch (Exception e) {
             Log.e(TAG, "Error enabling bass boost!", e);
         }
@@ -334,7 +334,7 @@ public class Equalizer {
         try {
             session.enableEqualizer(globalEnabled);
             final int customPresetPos = session.getNumEqualizerPresets();
-            final int preset = Integer.valueOf(mPrefs.getString("audiofx.eq.preset", String.valueOf(customPresetPos)));
+            final int preset = Integer.parseInt(mPrefs.getString("audiofx.eq.preset", String.valueOf(customPresetPos)));
             final int bands = session.getNumEqualizerBands();
 
             /*
