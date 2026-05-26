@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "boitapain",
+        "projectKey": "Boitapain_Shuttle"
+    }
+}

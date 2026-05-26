@@ -3,7 +3,7 @@ package com.simplecity.amp_library.ui.modelviews;
 import android.view.View;
 import android.view.ViewGroup;
 import com.simplecityapps.recycler_adapter.model.BaseViewModel;
-import com.simplecityapps.recycler_adapter.recyclerview.BaseViewHolder;
+import com.simplecityapps.recycler_adapter.recyclerview.;
 
 import static com.simplecity.amp_library.R.layout.list_item_artwork_loading;
 import static com.simplecity.amp_library.ui.adapters.ViewType.LOADING;
