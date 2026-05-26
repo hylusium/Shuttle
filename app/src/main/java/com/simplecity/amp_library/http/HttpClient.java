@@ -14,11 +14,15 @@ public class HttpClient {
 
     private static HttpClient sInstance;
 
-    public OkHttpClient okHttpClient;
+    private OkHttpClient okHttpClient;
 
     public LastFmService lastFmService;
 
     public static final String TAG_ARTWORK = "artwork";
+
+    public OkHttpClient getOkHttpClient() {
+        return okHttpClient;
+    }
 
     public static synchronized HttpClient getInstance() {
         if (sInstance == null) {
